@@ -45,7 +45,7 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(readmeData) {
   return `
-  # ${fileData.projectName}
+  # ${readmeData.projectName}
   ## Description
   ![License](https://img.shields.io/badge/License-${renderLicenseBadge(readmeData.license)}\
   
@@ -78,9 +78,12 @@ function generateMarkdown(readmeData) {
   ## Tests
   ${readmeData.tests}
   ## Questions
-  Have questions about this project?  
-  GitHub: https://github.com/${readmedata.github}  
-  Email: ${readmedata.email}
+  
+  My GitHub username is ${readmeData.github}. 
+  Project- https://${readmeData.github}.github.io/${readmeData.projectName}
+  Github repository is https://github.com/${readmeData.github}/${readmeData.projectName}.
+  You can email me at ${readmeData.email}. 
+  ## ©️2021 ${readmeData.github}
 `;
 }
 

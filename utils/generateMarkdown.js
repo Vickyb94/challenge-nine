@@ -42,3 +42,46 @@ function renderLicenseSection(license) {
   }
   return `The license used for this project was ${license}. The link to more information about this license can be found at: `;
 }
+// TODO: Create a function to generate markdown for README
+function generateMarkdown(readmeData) {
+  return `
+  # ${fileData.projectName}
+  ## Description
+  ![License](https://img.shields.io/badge/License-${renderLicenseBadge(readmeData.license)}\
+  
+  ${readmeData.description}
+  ## Table of Contents
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Credits](#credits)
+  * [License](#license)
+  * [Features](#features)
+  * [Contribution](#contribution)
+  * [Tests](#tests)
+  * [Questions](#questions)
+  
+  ## Installation
+  ${readmeData.installation}
+  ## Usage
+  ${readmeData.usage}
+  ## Credits
+  ${readmeData.credits}
+  
+  ## License
+  ![License](https://img.shields.io/badge/License-${renderLicenseBadge(readmeData.license)}
+  ${renderLicenseSection(readmeData.license)}
+  
+  ${renderLicenseLink(readmeData.license)}
+  
+  ## Contribution
+  ${readmeData.contributions}
+  ## Tests
+  ${readmeData.tests}
+  ## Questions
+  Have questions about this project?  
+  GitHub: https://github.com/${readmedata.github}  
+  Email: ${readmedata.email}
+`;
+}
+
+module.exports = generateMarkdown;

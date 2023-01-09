@@ -141,9 +141,10 @@ const writeToFile = fileData => {
         reject(err);
         return;
        }
+       //return out of the function to prevent the so that the Promise does not continue to carry out the resolve function
        resolve({
         ok: true,
-        message: 'File created!'
+        message: 'Done! README File created!'
        });
    });
  });

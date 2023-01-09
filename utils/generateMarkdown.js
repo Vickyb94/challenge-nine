@@ -16,3 +16,21 @@ function renderLicenseBadge(license) {
     return `ISC-blue.svg)`;
   }
 }
+// TODO: Create a function that returns the license link
+// If there is no license, return an empty string
+function renderLicenseLink(license) {
+  const [option] = license
+  if (!option) {
+    return '';
+  }  else if (option === 'EPL-1.0') {
+    return `https://opensource.org/licenses/EPL-1.0`;
+  } else if (option === 'CC0-1.0') {
+    return `http://creativecommons.org/publicdomain/zero/1.0/`;
+  } else if (option === 'MIT') {
+    return `https://opensource.org/licenses/MIT`;
+  } else if (option === 'apache-2.0') {
+    return `https://opensource.org/licenses/Apache-2.0`;
+  } else if (option === 'ISC') {
+    return `https://opensource.org/licenses/ISC`;
+  }
+}

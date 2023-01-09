@@ -151,7 +151,18 @@ const writeToFile = fileData => {
 };
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    return inquirer.prompt(questions)
+    .then (readmeData => {
+        return generateMarkdown(readmeData)
+    })
+    .then (readmeData => {
+        return writeFile(readmeData)
+      })
+      .catch(err => {
+        console.log(err);
+      });
+}
 
 // Function call to initialize app
 init();

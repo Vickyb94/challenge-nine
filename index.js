@@ -135,7 +135,7 @@ const questions = [
 function writeToFile(fileName, data) {}
 const writeToFile = fileData => {
     return new Promise ((resolve, reject) => {
-        fs.writeFile('./dist/README.md', fileData, err => {
+        fs.writeToFile('./dist/README.md', fileData, err => {
     //if there is an error, the promise is rejected
        if (err) {
         reject(err);
@@ -157,7 +157,7 @@ function init() {
         return generateMarkdown(readmeData)
     })
     .then (readmeData => {
-        return writeFile(readmeData)
+        return writeToFile(readmeData)
       })
       .catch(err => {
         console.log(err);

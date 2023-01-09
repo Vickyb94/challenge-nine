@@ -2,7 +2,7 @@
   # undefined
   ## Description
   ![License](https://img.shields.io/badge/License-MIT.0-lightgrey.svg)  
-  test
+  test description
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
@@ -14,9 +14,9 @@
   * [Questions](#questions)
   
   ## Installation
-  test
+  test instructions
   ## Usage
-  test
+  test steps
   ## Credits
   undefined
   
@@ -29,11 +29,11 @@
   ## Contribution
   undefined
   ## Tests
-  test
+  test guidelines
   ## Questions
   
   My GitHub username is undefined. 
   Project- https://undefined.github.io/undefined
   Github repository is https://github.com/undefined/undefined.
-  You can email me at test. 
+  You can email me at test email. 
   ## ©️2021 undefined

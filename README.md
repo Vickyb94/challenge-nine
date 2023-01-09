@@ -11,7 +11,7 @@ This application can be installed by downloading the source code from https://gi
 User opens the terminal and enters 'node index.js' on command line. And then answers the question that follow by pressing enter.
 ![alt text](images/created%20readme%20file.png)
 ![alt text](images/readme%20preview.png)
-Video Link - 
+Video Link - https://drive.google.com/file/d/199K0WBG2LBzOgG5SNzgW6lLVzuWL9pv-/view
 
 ## Credits
 https://www.youtube.com/watch?v=cqJQ9wbUQto
